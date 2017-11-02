@@ -1,3 +1,7 @@
+__tests__
+ios/
+index.ios.js
+package-lock.json
 # OSX
 #
 .DS_Store
