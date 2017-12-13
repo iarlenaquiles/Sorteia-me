@@ -4,9 +4,17 @@ var View = require('react-native').View;
 var Button = require('react-native').Button;
 var AppRegistry = require('react-native').AppRegistry;
 
+const geraNumeroAleatorio = () => {
+	var numero_aleatorio = Math.random();
+	numero_aleatorio = Math.floor(numero_aleatorio * 100);
+	alert(numero_aleatorio);
+}
 const App = () =>{
   return (
-    <Text>Meu primeiro App</Text>
+  	<View>
+    	<Text>Gerador de números randômicos</Text>
+    	<Button title="Gerar um número randômico" onPress={geraNumeroAleatorio} />
+    </View>
     );
 };
 
